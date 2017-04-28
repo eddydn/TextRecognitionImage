@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dev.edmt.textrecognitionimage.MainActivity">
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:scaleType="centerInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_view" />
+
+    <Button
+        android:layout_below="@+id/image_view"
+        android:layout_gravity="center_horizontal"
+        android:text="PROCESS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_process" />
+
+    <TextView
+        android:id="@+id/textview_result"
+        android:text="NO TEXT"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:layout_below="@+id/button_process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
